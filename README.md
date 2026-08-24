@@ -147,19 +147,19 @@ NexaTech/
 
 <img width="1873" height="881" alt="NexaTech Landing Page - Services" src="https://github.com/user-attachments/assets/eb271378-fec4-429b-8d94-e03fc0602dfd" />
 
-### Dashboard
-
 <img width="1889" height="796" alt="NexaTech Dashboard" src="https://github.com/user-attachments/assets/7f417252-5cfd-4f85-b8ee-81a3e048c0bd" />
-
-<img width="1875" height="785" alt="NexaTech Dashboard - Activity" src="https://github.com/user-attachments/assets/6faf5b29-ede5-4230-b02f-c209203f16e2" />
-
-### Login Page
-
-<img width="1865" height="871" alt="NexaTech Login Page" src="https://github.com/user-attachments/assets/e6d545f9-3770-4848-945b-0342112777c0" />
 
 ### Pricing Page
 
+<img width="1875" height="785" alt="NexaTech Dashboard - Activity" src="https://github.com/user-attachments/assets/6faf5b29-ede5-4230-b02f-c209203f16e2" />
+
+<img width="1865" height="871" alt="NexaTech Login Page" src="https://github.com/user-attachments/assets/e6d545f9-3770-4848-945b-0342112777c0" />
+
+### Dashboard
+
 <img width="1877" height="882" alt="NexaTech Pricing Page" src="https://github.com/user-attachments/assets/70dc06c1-bfe7-4d2c-ac49-f37d6c19b4cb" />
+
+###Login Page
 
 <img width="1888" height="853" alt="NexaTech Pricing Page - Responsive Layout" src="https://github.com/user-attachments/assets/25cceb61-d717-4593-a429-42d1d3d0a096" />
 
