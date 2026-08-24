@@ -1,53 +1,63 @@
-# NexaTech Company Landing Page
+# NexaTech UI Development Project
 
-A responsive company landing page built using HTML5 and CSS3 as part of my UI development training.
+A responsive multi-page company website built using HTML5 and CSS3 as part of my UI Developer training.
+
+## Pages
+
+- Company Landing Page
+- Dashboard Layout
+- Login Page
+- Responsive Pricing Page
 
 ## What I Learned
 
-* Semantic HTML
-* Forms and input types
-* HTML5 form validation
-* Tables
-* Basic accessibility
-* CSS selectors
-* Box Model
-* Typography and spacing
-* CSS variables
-* Flexbox
-* CSS Grid
-* Responsive design
-* Media queries
-* Hover and focus states
+- Semantic HTML5
+- Forms and input types
+- HTML5 form validation
+- Basic accessibility
+- CSS selectors
+- Box Model
+- Typography and spacing
+- CSS variables
+- Flexbox
+- CSS Grid
+- Responsive design
+- Media queries
+- Hover and focus states
+- Multi-page navigation
+- Responsive layouts
 
-## Page Sections
+## Features
 
-* Responsive Navigation Bar
-* Hero Section
-* Services Section
-* About Section
-* Pricing Table
-* Contact Form
-* Footer
+- Responsive navigation bar
+- Hero section
+- Services section
+- About section
+- Pricing layouts
+- Dashboard with statistics and activity cards
+- Responsive login form
+- HTML5 form validation
+- Contact form
+- Responsive footer
+- Mobile, tablet and desktop layouts
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* Flexbox
-* CSS Grid
-* Responsive Design
-* Media Queries
-* Git
+- HTML5
+- CSS3
+- Flexbox
+- CSS Grid
+- Responsive Design
+- Media Queries
+- Git & GitHub
 
 ## Project Structure
 
 ```text
-company-landing-page/
+NexaTech/
 ├── index.html
+├── dashboard.html
+├── login.html
+├── pricing.html
 ├── style.css
 └── README.md
-```
-
-## Key Takeaway
-
-This project helped me understand how HTML provides the structure and semantics of a webpage, while CSS handles styling, layout, and responsiveness.
