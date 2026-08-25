@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NexaTech business dashboard."
+    >
+
+    <title>NexaTech | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+<div class="dashboard-layout">
+
+    <!-- ========================================
+         SIDEBAR
+    ========================================= -->
+
+    <aside class="dashboard-sidebar">
+
+        <a
+            href="index.html"
+            class="dashboard-logo"
+        >
+            Nexa<span>Tech</span>
+        </a>
+
+        <nav
+            class="dashboard-nav"
+            aria-label="Dashboard navigation"
+        >
+
+            <a
+                href="#dashboard"
+                class="dashboard-nav-item active"
+            >
+                <span aria-hidden="true">▣</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a
+                href="#analytics"
+                class="dashboard-nav-item"
+            >
+                <span aria-hidden="true">◇</span>
+                <span>Analytics</span>
+            </a>
+
+            <a
+                href="#projects"
+                class="dashboard-nav-item"
+            >
+                <span aria-hidden="true">□</span>
+                <span>Projects</span>
+            </a>
+
+            <a
+                href="#messages"
+                class="dashboard-nav-item"
+            >
+                <span aria-hidden="true">✉</span>
+                <span>Messages</span>
+            </a>
+
+            <a
+                href="#settings"
+                class="dashboard-nav-item"
+            >
+                <span aria-hidden="true">⚙</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html">
+                ← Back to website
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ========================================
+         MAIN DASHBOARD
+    ========================================= -->
+
+    <main class="dashboard-main">
+
+
+        <!-- ====================================
+             DASHBOARD OVERVIEW
+        ===================================== -->
+
+        <section
+            id="dashboard"
+            class="dashboard-page-section"
+        >
+
+            <header class="dashboard-topbar">
+
+                <div>
+                    <p class="dashboard-breadcrumb">
+                        Workspace / Overview
+                    </p>
+
+                    <h1>
+                        Dashboard
+                    </h1>
+                </div>
+
+                <div class="profile">
+
+                    <div class="profile-info">
+                        <strong>Kiran</strong>
+                        <span>Administrator</span>
+                    </div>
+
+                    <div class="avatar">
+                        K
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <div class="dashboard-content">
+
+                <div class="dashboard-heading">
+
+                    <div>
+                        <h2>Overview</h2>
+
+                        <p>
+                            Here's what's happening with your business.
+                        </p>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="button primary-button"
+                    >
+                        + New Project
+                    </button>
+
+                </div>
+
+
+                <!-- Statistics -->
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Total Users</span>
+
+                            <div class="stat-icon">
+                                U
+                            </div>
+                        </div>
+
+                        <strong>12,450</strong>
+
+                        <small class="positive">
+                            ↑ 12% this month
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Revenue</span>
+
+                            <div class="stat-icon">
+                                ₹
+                            </div>
+                        </div>
+
+                        <strong>₹84,500</strong>
+
+                        <small class="positive">
+                            ↑ 8.4% this month
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Projects</span>
+
+                            <div class="stat-icon">
+                                P
+                            </div>
+                        </div>
+
+                        <strong>48</strong>
+
+                        <small class="positive">
+                            6 active projects
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Tasks</span>
+
+                            <div class="stat-icon">
+                                T
+                            </div>
+                        </div>
+
+                        <strong>126</strong>
+
+                        <small class="warning">
+                            18 pending
+                        </small>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Recent Activity -->
+
+                <div class="dashboard-content-grid">
+
+                    <section class="dashboard-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h2>Recent Activity</h2>
+
+                                <p>
+                                    Latest updates from your workspace.
+                                </p>
+                            </div>
+
+                            <a href="#messages">
+                                View all
+                            </a>
+
+                        </div>
+
+
+                        <div class="activity-list">
+
+                            <article class="activity-item">
+
+                                <div class="activity-avatar">
+                                    A
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <strong>
+                                        New project created
+                                    </strong>
+
+                                    <p>
+                                        Website redesign project
+                                    </p>
+
+                                </div>
+
+                                <time>
+                                    10m
+                                </time>
+
+                            </article>
+
+
+                            <article class="activity-item">
+
+                                <div class="activity-avatar">
+                                    P
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <strong>
+                                        Payment received
+                                    </strong>
+
+                                    <p>
+                                        Invoice #1024
+                                    </p>
+
+                                </div>
+
+                                <time>
+                                    1h
+                                </time>
+
+                            </article>
+
+
+                            <article class="activity-item">
+
+                                <div class="activity-avatar">
+                                    D
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <strong>
+                                        Dashboard updated
+                                    </strong>
+
+                                    <p>
+                                        New analytics available
+                                    </p>
+
+                                </div>
+
+                                <time>
+                                    3h
+                                </time>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Quick Actions -->
+
+                    <section class="dashboard-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h2>Quick Actions</h2>
+
+                                <p>
+                                    Frequently used tools.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+                            <a
+                                href="#projects"
+                                class="quick-action"
+                            >
+                                <strong>+</strong>
+                                <span>New Project</span>
+                            </a>
+
+                            <a
+                                href="#analytics"
+                                class="quick-action"
+                            >
+                                <strong>↗</strong>
+                                <span>View Analytics</span>
+                            </a>
+
+                            <a
+                                href="#messages"
+                                class="quick-action"
+                            >
+                                <strong>✉</strong>
+                                <span>Messages</span>
+                            </a>
+
+                            <a
+                                href="#settings"
+                                class="quick-action"
+                            >
+                                <strong>⚙</strong>
+                                <span>Settings</span>
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             ANALYTICS
+        ===================================== -->
+
+        <section
+            id="analytics"
+            class="dashboard-page-section dashboard-dummy-section"
+        >
+
+            <div class="dashboard-content">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        BUSINESS INSIGHTS
+                    </p>
+
+                    <h2>
+                        Analytics
+                    </h2>
+
+                    <p>
+                        Monitor your business performance and
+                        understand your progress.
+                    </p>
+
+                </div>
+
+
+                <div class="analytics-grid">
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Monthly Growth</span>
+                        </div>
+
+                        <strong>18.4%</strong>
+
+                        <small class="positive">
+                            ↑ 4.2% from last month
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Conversion Rate</span>
+                        </div>
+
+                        <strong>12.6%</strong>
+
+                        <small class="positive">
+                            ↑ 2.1% this month
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Active Users</span>
+                        </div>
+
+                        <strong>12,450</strong>
+
+                        <small class="positive">
+                            ↑ 12% this month
+                        </small>
+
+                    </article>
+
+                </div>
+
+
+                <div class="dashboard-panel">
+
+                    <h2>
+                        Performance Overview
+                    </h2>
+
+                    <p class="panel-description">
+                        Detailed analytics will be displayed here
+                        as dashboard functionality is expanded.
+                    </p>
+
+                    <div class="dummy-chart">
+                        Analytics Chart
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             PROJECTS
+        ===================================== -->
+
+        <section
+            id="projects"
+            class="dashboard-page-section dashboard-dummy-section"
+        >
+
+            <div class="dashboard-content">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        WORKSPACE
+                    </p>
+
+                    <h2>
+                        Projects
+                    </h2>
+
+                    <p>
+                        View and manage your current projects.
+                    </p>
+
+                </div>
+
+
+                <div class="project-grid">
+
+                    <article class="dashboard-panel project-card">
+
+                        <span class="project-status completed">
+                            Completed
+                        </span>
+
+                        <h3>
+                            Company Website
+                        </h3>
+
+                        <p>
+                            Responsive corporate website.
+                        </p>
+
+                        <strong>
+                            100% Complete
+                        </strong>
+
+                    </article>
+
+
+                    <article class="dashboard-panel project-card">
+
+                        <span class="project-status progress">
+                            In Progress
+                        </span>
+
+                        <h3>
+                            Dashboard UI
+                        </h3>
+
+                        <p>
+                            Business analytics dashboard.
+                        </p>
+
+                        <strong>
+                            70% Complete
+                        </strong>
+
+                    </article>
+
+
+                    <article class="dashboard-panel project-card">
+
+                        <span class="project-status pending">
+                            Pending
+                        </span>
+
+                        <h3>
+                            Mobile Application
+                        </h3>
+
+                        <p>
+                            Mobile interface development.
+                        </p>
+
+                        <strong>
+                            20% Complete
+                        </strong>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             MESSAGES
+        ===================================== -->
+
+        <section
+            id="messages"
+            class="dashboard-page-section dashboard-dummy-section"
+        >
+
+            <div class="dashboard-content">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        COMMUNICATION
+                    </p>
+
+                    <h2>
+                        Messages
+                    </h2>
+
+                    <p>
+                        View recent messages from your team.
+                    </p>
+
+                </div>
+
+
+                <div class="message-list">
+
+                    <article class="dashboard-panel message-card">
+
+                        <div class="message-header">
+
+                            <div class="activity-avatar">
+                                A
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Alex Morgan
+                                </strong>
+
+                                <small>
+                                    10 minutes ago
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <p>
+                            Can you review the new dashboard layout
+                            before the next meeting?
+                        </p>
+
+                        <button
+                            type="button"
+                            class="button secondary-dark-button"
+                        >
+                            Reply
+                        </button>
+
+                    </article>
+
+
+                    <article class="dashboard-panel message-card">
+
+                        <div class="message-header">
+
+                            <div class="activity-avatar">
+                                P
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Priya Sharma
+                                </strong>
+
+                                <small>
+                                    1 hour ago
+                                </small>
+                            </div>
+
+                        </div>
+
+                        <p>
+                            The pricing page is ready for review.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="button secondary-dark-button"
+                        >
+                            Reply
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             SETTINGS
+        ===================================== -->
+
+        <section
+            id="settings"
+            class="dashboard-page-section dashboard-dummy-section"
+        >
+
+            <div class="dashboard-content">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        ACCOUNT
+                    </p>
+
+                    <h2>
+                        Settings
+                    </h2>
+
+                    <p>
+                        Manage your dashboard preferences.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-panel settings-panel">
+
+                    <div class="setting-row">
+
+                        <div>
+                            <strong>
+                                Email Notifications
+                            </strong>
+
+                            <p>
+                                Receive notifications about
+                                project updates.
+                            </p>
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            checked
+                        >
+
+                    </div>
+
+
+                    <div class="setting-row">
+
+                        <div>
+                            <strong>
+                                Weekly Reports
+                            </strong>
+
+                            <p>
+                                Receive a weekly summary of activity.
+                            </p>
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            checked
+                        >
+
+                    </div>
+
+
+                    <div class="setting-row">
+
+                        <div>
+                            <strong>
+                                Marketing Emails
+                            </strong>
+
+                            <p>
+                                Receive product news and announcements.
+                            </p>
+                        </div>
+
+                        <input
+                            type="checkbox"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
