@@ -167,8 +167,10 @@ Today's work directly contributes to the Week 2 requirements:
 
 ### Desktop View
 <img width="947" height="437" alt="Screenshot 2026-08-26 121041" src="https://github.com/user-attachments/assets/9144fac1-d99c-42f7-863e-4f4c17281dd5" />
+
 ### Mobile / Responsive View
 <img width="435" height="432" alt="Screenshot 2026-08-26 121106" src="https://github.com/user-attachments/assets/23154713-3208-40a4-8f23-cc229781dd60" />
+
 ### Search / Filter View
 <img width="958" height="436" alt="Screenshot 2026-08-26 121145" src="https://github.com/user-attachments/assets/4b2be3b9-3b72-46ce-b3be-450f335c1c2f" />
 
