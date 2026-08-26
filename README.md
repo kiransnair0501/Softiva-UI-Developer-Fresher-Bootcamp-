@@ -1,198 +1,16 @@
-# UI Developer Fresher Bootcamp
+# Employee Card Grid — Day 1
 
-## Overview
+## Objective
 
-This repository contains the work completed as part of the **UI Developer Fresher Bootcamp**. The bootcamp focuses on building practical frontend development skills through self-study, hands-on implementation, assignments, feature development, Git/GitHub workflows, and internal reviews.
+Build a responsive **Employee Card Grid** using **React, TypeScript, and Vite**, while learning the fundamentals of component-based UI development.
 
-The program covers modern frontend technologies ranging from **HTML5 and CSS3 to JavaScript, TypeScript, React, Vite, Tailwind CSS, shadcn/ui, React Router, Zustand, React Hook Form, Zod, Axios, Git/GitHub, Figma, Playwright, and deployment platforms**.
+## What I Learned
 
----
-
-## Technology Stack
-
-* HTML5
-* CSS3
-* JavaScript (ES6+)
-* TypeScript
-* React 19
-* Vite
-* Tailwind CSS
-* shadcn/ui
-* React Router
-* Zustand
-* React Hook Form
-* Zod
-* Axios
-* Git & GitHub
-* Figma
-* Playwright (Basic)
-* Vercel / Azure Static Web Apps
-
----
-
-# Daily Schedule
-
-The bootcamp follows a **6-hour daily schedule**.
-
-| Time          | Activity                                      |
-| ------------- | --------------------------------------------- |
-| 09:00 – 10:30 | Self-study — videos/documentation             |
-| 10:30 – 12:30 | Hands-on implementation                       |
-| 12:30 – 13:00 | Break                                         |
-| 13:00 – 14:30 | Assignment / feature development              |
-| 14:30 – 15:00 | Git commit, PR creation, documentation update |
-
-### Daily Completion Requirements
-
-Every working day must end with:
-
-* Git Commit
-* GitHub Push
-* Pull Request
-* Learning Journal Entry
-
----
-
-# Week 1 — HTML, CSS & JavaScript Fundamentals
-
-## Goal
-
-Build responsive websites **without using any frontend framework**.
-
-## Topics
-
-### HTML & CSS
-
-* Semantic HTML
-* Forms and Input Controls
-* Tables
-* CSS Box Model
-* Flexbox
-* CSS Grid
-* Responsive Design
-* Media Queries
-
-### JavaScript
-
-* DOM Manipulation
-* Events
-* Arrays and Objects
-* Functions
-* ES6 Syntax
-
-## Self-Study Resources
-
-### HTML & CSS
-
-* MDN Web Docs — HTML
-* MDN Web Docs — CSS
-* freeCodeCamp Responsive Web Design
-
-### JavaScript
-
-* JavaScript.info — Complete Beginner Path
-* MDN JavaScript Guide
-
-## Deliverables
-
-1. Company Landing Page
-2. Login Page
-3. Dashboard Layout
-4. Responsive Pricing Page
-
-## Internal Review 1
-
-**Reviewer:** Senior UI Developer
-
-### Evaluation Criteria
-
-* Semantic HTML
-* CSS Organization
-* Responsive Behavior
-* Naming Conventions
-* JavaScript Readability
-
-### Pass Criteria
-
-> Pixel-accurate responsive implementation.
-
----
-
-# Week 2 — TypeScript & React Foundations
-
-## Goal
-
-Understand **component-based UI development using React**.
-
-## Self-Study Resources
-
-### TypeScript
-
-* TypeScript Handbook
-* Total TypeScript Beginner Guide — YouTube
-
-### React
-
-* React Official Learn
-* React Documentation
-
-## Topics
-
-### TypeScript
-
-* TypeScript Basics
-* Interfaces
-* Types
-
-### React
-
-* React Components
-* JSX
-* Props
-* State
-* Event Handling
-* Lists
-* Conditional Rendering
-* `useState`
-* `useEffect`
-
-### Development
-
-* Project Structure
-* Vite Workflow
-
-## Deliverables
-
-1. Counter App
-2. Todo Application
-3. Employee Card Grid
-4. FAQ Accordion
-
-## Internal Review 2
-
-### Evaluation Criteria
-
-* Component Decomposition
-* TypeScript Usage
-* React Patterns
-* State Management
-* Folder Structure
-
-### Pass Criteria
-
-> Functional React application with reusable components.
-
----
-
-# Current Project — Employee Card Grid
-
-The Employee Card Grid is one of the required **Week 2 deliverables**.
-
-The project demonstrates:
-
-* React components
+* Vite project setup
+* React project structure
 * TypeScript interfaces
-* Typed data
+* TypeScript typed arrays
+* React components
 * JSX
 * Props
 * List rendering with `map()`
@@ -200,11 +18,12 @@ The project demonstrates:
 * `useState`
 * Event handling
 * Conditional rendering
-* Search/filter functionality
+* Array `filter()`
+* Search functionality
 * CSS Grid
 * Responsive design
 * Local image assets
-* Component-based project structure
+* Component decomposition
 
 ## Project Structure
 
@@ -229,11 +48,82 @@ src/
 └── main.tsx
 ```
 
----
+## Features Implemented
 
-## Learning Flow
+### Employee Data
 
-The Employee Card Grid follows this basic React architecture:
+Created a TypeScript `Employee` interface containing:
+
+* ID
+* Name
+* Role
+* Department
+* Email
+
+Created an employee data array using the interface.
+
+### Employee Cards
+
+Created a reusable `EmployeeCard` component that receives employee information through **props**.
+
+Each card displays:
+
+* Profile image
+* Employee name
+* Role
+* Department
+* View Details button
+
+### View Details
+
+Implemented `useState` to show and hide additional employee information.
+
+```text
+View Details
+      ↓
+State changes
+      ↓
+Employee details appear
+      ↓
+Hide Details
+```
+
+### Search
+
+Added an employee search field using:
+
+* `useState`
+* `onChange`
+* `filter()`
+* Conditional rendering
+
+Users can search employees by name.
+
+### Responsive Design
+
+Implemented CSS Grid and media queries:
+
+```text
+Desktop → 3 columns
+Tablet  → 2 columns
+Mobile  → 1 column
+```
+
+### UI Styling
+
+Added:
+
+* Custom wallpaper background
+* White employee cards
+* Profile images
+* Department badges
+* Styled buttons
+* Card hover effects
+* Responsive layout
+* Poppins font for headings
+* Inter font for general UI text
+
+## Key React Flow
 
 ```text
 Employee Data
@@ -255,66 +145,30 @@ Event Handling
 Conditional Rendering
 ```
 
-The search functionality follows:
+## Bootcamp Requirements Covered
 
-```text
-Search Input
-      ↓
-onChange
-      ↓
-useState
-      ↓
-filter()
-      ↓
-Filtered Employees
-      ↓
-map()
-      ↓
-Updated Cards
-```
+Today's work directly contributes to the Week 2 requirements:
 
----
+* TypeScript Basics
+* Interfaces
+* Types
+* React Components
+* JSX
+* Props
+* State
+* Event Handling
+* Lists
+* Conditional Rendering
+* `useState`
+* Project Structure
+* Vite Workflow
 
-# Git & Documentation Workflow
+The **Employee Card Grid** is also one of the specified Week 2 deliverables.
 
-Each completed working day follows the required workflow:
+## End-of-Day Checklist
 
-```text
-Development
-    ↓
-Testing
-    ↓
-Git Commit
-    ↓
-GitHub Push
-    ↓
-Pull Request
-    ↓
-Learning Journal Entry
-```
-
----
-
-# Bootcamp Objectives
-
-By completing the bootcamp, the developer is expected to progress from fundamental web development concepts toward modern component-based frontend development.
-
-The progression is:
-
-```text
-HTML
- ↓
-CSS
- ↓
-JavaScript
- ↓
-TypeScript
- ↓
-React
- ↓
-Component Architecture
- ↓
-Modern Frontend Tooling
-```
-
-The bootcamp combines **self-study, implementation, assignments, feature development, documentation, and internal technical reviews** to evaluate practical frontend development skills.
+* [x] Employee Card Grid implemented
+* [x] Responsive layout implemented
+* [x] React interactions working
+* [x] Search implemented
+* [x] UI styling completed
