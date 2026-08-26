@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: "Inter", sans-serif;
+
+  background-image:
+    linear-gradient(
+      rgba(8, 45, 90, 0.25),
+      rgba(8, 45, 90, 0.25)
+    ),
+    url("./assets/wallpaper.png");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  color: #172033;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+main {
+  width: 100%;
+  max-width: 1250px;
+  min-height: 100vh;
+
+  margin: 0 auto;
+
+  padding: 55px 30px 70px;
+}
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+main h1 {
+  margin: 0 0 28px;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+  line-height: 1.15;
+
+  text-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-container {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.search-container input {
+  width: 100%;
+  max-width: 100%;
+  height: 54px;
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  color: #172033;
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+
+  outline: none;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.15);
+
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.search-container input::placeholder {
+  color: #7b8494;
+}
+
+.search-container input:focus {
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.45),
+    0 8px 24px rgba(0, 0, 0, 0.18);
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+   EMPLOYEE GRID
+========================= */
+
+.employee-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 26px;
+}
+
+/* =========================
+   EMPLOYEE CARD
+========================= */
+
+.employee-card {
+  background: #ffffff;
+
+  padding: 26px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.14);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.20);
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.employee-avatar {
+  width: 72px;
+  height: 72px;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 18px;
+}
+
+/* =========================
+   EMPLOYEE NAME
+========================= */
+
+.employee-card h2 {
+  margin: 0 0 8px;
+
+  color: #172033;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* =========================
+   ROLE
+========================= */
+
+.employee-role {
+  margin: 0 0 14px;
+
+  color: #596579;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* =========================
+   DEPARTMENT
+========================= */
+
+.employee-department {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  background: #eaf2ff;
+  color: #1854a3;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.employee-card button {
+  display: block;
+
+  margin-top: 20px;
+
+  padding: 10px 17px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #0f3b68;
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.employee-card button:hover {
+  background: #092d52;
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+   DETAILS
+========================= */
+
+.employee-details {
+  margin-top: 18px;
+
+  padding-top: 14px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.employee-details p {
+  margin: 8px 0;
+
+  color: #596579;
+
+  font-size: 14px;
+}
+
+/* =========================
+   NO RESULTS
+========================= */
+
+.no-results {
+  margin-top: 30px;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  main {
+    padding: 45px 24px 60px;
+  }
+
+  main h1 {
+    font-size: 38px;
+  }
+
+  .employee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  main {
+    padding: 35px 16px 50px;
+  }
+
+  main h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .search-container input {
+    height: 50px;
+  }
+
+  .employee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-card {
+    padding: 22px;
+  }
+}
