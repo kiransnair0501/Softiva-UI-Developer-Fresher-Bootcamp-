@@ -1,75 +1,102 @@
-# React + TypeScript + Vite
+# AdminHub Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Admin Dashboard** built with **React, TypeScript, Vite, and Tailwind CSS** as part of the Softiva UI Developer Fresher Bootcamp.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Today's work focused on building the foundation of a professional admin dashboard and learning how Tailwind CSS can be used to create responsive layouts efficiently. The project uses reusable React components and responsive utility classes to create a structured dashboard interface.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Responsive admin dashboard layout
+* Sidebar navigation
+* Dashboard header
+* Statistics cards
+* Recent activity section
+* Quick overview section
+* Responsive user table
+* Responsive CSS Grid layout
+* Flexbox-based alignment
+* Reusable React components
+* Tailwind CSS utility-based styling
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* HTML5
+* CSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+src/
+├── components/
+│   ├── Sidebar.tsx
+│   ├── Header.tsx
+│   ├── StatCard.tsx
+│   ├── ActivitySection.tsx
+│   ├── QuickOverview.tsx
+│   └── UserTable.tsx
+│
+├── App.tsx
+├── index.css
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Concepts Learned
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* Tailwind utility classes
+* Utility-first CSS
+* Flexbox
+* CSS Grid
+* Responsive breakpoints
+* Responsive utility classes
+* Spacing utilities
+* Typography utilities
+* Colors and backgrounds
+* Borders and border radius
+* Shadows
+* Hover states
+* Responsive tables
+* Component composition
+* Reusable React components
+* TypeScript props and interfaces
+* Rendering lists using `.map()`
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Dashboard Layout
 
+```text
+AdminHub
+│
+├── Sidebar
+│
+└── Main Content
+    ├── Header
+    ├── Statistics Cards
+    ├── Recent Activity
+    ├── Quick Overview
+    └── User Table
 ```
+
+## Getting Started
+
+Install the project dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will then be available through the local Vite development server.
+
+## Today's Objective
+
+The objective was to establish the foundation of the **AdminHub dashboard** while learning Tailwind CSS and applying responsive UI development practices through a practical React project.
