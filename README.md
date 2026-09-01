@@ -1,75 +1,77 @@
-# React + TypeScript + Vite
+# AdminHub — Week 2 Tuesday
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Today I continued building **AdminHub**, a React + TypeScript admin dashboard, focusing on modern UI development, reusable components, responsive layouts, dark mode, dropdowns, and accessibility.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Work Completed
 
-## React Compiler
+* Added React Router pages for:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  * Dashboard
+  * Users
+  * Profile
+  * Settings
+* Created a reusable `Layout` component.
+* Improved the responsive Sidebar and Header.
+* Implemented functional **Dark Mode / Light Mode** toggle.
+* Added theme persistence using `localStorage`.
+* Added an Admin profile dropdown.
+* Added outside-click handling for the dropdown.
+* Added a responsive mobile navigation menu.
+* Added User search and filtering.
+* Added Add User functionality.
+* Added Edit User functionality.
+* Added Delete User functionality.
+* Added reusable Toast notifications.
+* Added success/error feedback for user actions.
+* Added accessible labels and ARIA attributes.
+* Added keyboard focus states.
+* Improved responsive table behaviour.
+* Added Settings tabs for General, Security, and Notifications.
+* Improved overall dark-mode styling across the application.
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* TypeScript
+* Tailwind CSS
+* React Router
+* Lucide React
+* Vite
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tuesday Deliverable
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+A functional **AdminHub** dashboard with:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* Sidebar
+* Header
+* Dashboard cards
+* Activity section
+* Quick Overview
+* User management table
+* Search
+* Add/Edit/Delete users
+* Profile page
+* Settings page
+* Dark/Light mode
+* Dropdown menus
+* Toast notifications
+* Responsive design
+* Basic accessibility support
 
-```
+## Learning Notes
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+* Practiced Tailwind utility classes and responsive variants.
+* Learned how to structure reusable React layouts.
+* Used React state to control UI interactions.
+* Implemented conditional rendering for menus and dialogs.
+* Used React Router for page navigation.
+* Used `localStorage` to persist theme preferences.
+* Practiced responsive layouts with Tailwind breakpoints.
+* Used Lucide React for consistent interface icons.
+* Implemented accessible buttons, labels, focus states, and ARIA attributes.
+* Learned how reusable components reduce duplicated UI code.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 
-```
