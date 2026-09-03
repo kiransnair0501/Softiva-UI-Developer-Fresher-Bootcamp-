@@ -1,75 +1,87 @@
-# React + TypeScript + Vite
+# AdminHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Updates Since Tuesday
 
-Currently, two official plugins are available:
+This update includes the latest improvements made to the AdminHub project after the Tuesday commit.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## User Management
 
-## React Compiler
+- Added pagination with 5 users per page
+- Added role-based filtering
+- Added status-based filtering
+- Added combined search and filtering
+- Added filter reset functionality
+- Added automatic pagination reset when search or filters change
+- Added user form validation
+- Added required field validation for name and email
+- Added minimum name length validation
+- Added email format validation
+- Added duplicate email validation
+- Added loading states for user operations
+- Added API error states
+- Added retry functionality for failed user loading
+- Added success and failure toast notifications
+- Improved responsive user table layout
+- Added accessible user action menus
+- Added accessible pagination controls
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## State Management
 
-## Expanding the ESLint configuration
+- Added Zustand for centralized user state management
+- Added persistent user state using Zustand persistence
+- Connected the Dashboard to the shared user store
+- Connected Quick Overview to the shared user store
+- Centralized user fetch, create, update, and delete operations
+- User changes now persist after page refresh
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## API Integration
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Added environment variable support for the API URL
+- Added `.env` configuration using `VITE_API_URL`
+- Updated the API service to use the configured environment variable
+- Added error handling for GET requests
+- Added error handling for POST requests
+- Added error handling for PUT requests
+- Added error handling for DELETE requests
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Profile
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Added profile persistence using localStorage
+- Profile changes now remain after page refresh
+- Added persistence for:
+  - Name
+  - Email
+  - Phone
+  - Location
 
-```
+## Settings
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- Added settings persistence using localStorage
+- Application settings now remain after page refresh
+- Added persistence for:
+  - Application name
+  - Language
+  - Timezone
+  - Two-factor authentication
+  - Email notifications
+  - System notifications
+  - Security alerts
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Validation and Error Handling
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Added client-side validation for user forms
+- Added duplicate email detection
+- Added API failure handling
+- Added loading feedback during API operations
+- Added retry functionality
+- Added empty search/filter results state
+- Added success and failure feedback through toast notifications
 
-```
+## Environment Configuration
+
+The API URL is now configurable through an environment variable.
+
+Create a `.env` file in the project root:
+
+```env
+VITE_API_URL=https://jsonplaceholder.typicode.com
